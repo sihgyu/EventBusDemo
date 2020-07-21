@@ -1,0 +1,2 @@
+# EventBusDemo
+一个EventBus结合Spring的使用demo
