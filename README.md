@@ -1,6 +1,6 @@
 # EventBusDemo
 一个EventBus结合Spring的使用demo
-@[toc]
+
 ### 简介
 Guava在guava-libraries中为我们提供了事件总线EventBus库，它是事件发布订阅模式的实现，让我们能在领域驱动设计(DDD)中以事件的弱引用本质对我们的模块和领域边界很好的解耦设计。
  首先Guava为我们提供了同步事件EventBus和异步实现AsyncEventBus两个事件总线，他们都不是单例的，官方理由是并不想我们我们的使用方式。当然如果我们想其为单例，我们可以很容易封装它，一个单例模式保证只创建一个实例就对了。
@@ -72,9 +72,4 @@ Guava在guava-libraries中为我们提供了事件总线EventBus库，它是事�
   }
  ```
 
-### 执行结果 
-调用doEventBus 通过post方法匹配入参Integer类型
-订阅者ListerService收到消息开始执行方法：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200721201606841.png)
 
-Demo源码：
